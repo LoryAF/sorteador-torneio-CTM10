@@ -1,0 +1,106 @@
+@media screen and (max-width: 1250px) {
+    .container__logo {
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        position: relative; /* Define o position do body para relative */
+    }
+
+    .container__logo {
+        display: block; /* Permite centralizar */
+        margin: 0 auto; /* Margens automáticas para centralizar */
+        width: 13vh; /* Ajuste a largura conforme necessário */
+        height: auto; /* Ajuste a altura conforme necessário */
+        position: absolute; /* Posiciona a imagem absolutamente */
+        top: 2.5%; /* Ajuste a distância do topo */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta o posicionamento para o centro */
+    }
+
+    .container__informacoes {
+        flex: 1;
+        padding: 1.5rem;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .container__texto {
+        white-space: pre;
+        
+    }
+    
+    h1 {
+        font-size: 2.7rem;
+        text-align: center; /* Centraliza o h1 */
+    }
+
+    .container__texto-h1 {
+        padding: 0;
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .container__texto_sorteador {
+        margin-left: 1rem;
+    }
+
+    .container__texto-azul {
+        white-space: pre;
+    }
+    
+    .container__campo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 12px;
+        flex-direction: column;
+        margin-left: 2.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .texto__paragrafo {
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 0.7rem;
+        margin-left: 18%;
+    }
+
+    .container__input {
+        width: 80%;
+        height: 1rem;
+        text-align: center;
+    }
+
+    .container__botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        justify-content: center; /* Centraliza os botões verticalmente */
+        text-align: center; /* Centraliza o texto do botão */
+    }
+
+    .container__texto {
+        width: 80%;
+    }
+
+    #resultado {
+        text-align: left; /* Alinha o texto para a esquerda */
+        font-size: 16px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+}
