@@ -1,0 +1,90 @@
+/* style.css */
+body {
+    background: linear-gradient(#1c63a1 0%, #15548c 33.33%, #105088 66.67%, #083156 100%) no-repeat;
+    background-attachment: fixed; /* Fixa o background */
+    background-size: cover; /* Ajusta o background para cobrir a tela */
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+}
+
+body::before {
+    background-image: url("img/code.png"); /* Substitua pelo caminho da sua imagem */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    content: "";
+    display: block;
+    position: fixed; /* Fixa a imagem no fundo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+.container {
+    background-image: url('img/Ruido.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #e3e3e3;
+    color: #007be7;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 6px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.btn-primary {
+    background-color: #ff8b0f;
+    border: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.container__logo {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte conforme desejado */
+}
+
+#btn:hover {
+    background-color: #ff8b0f; 
+    border-color: #ff9f39; 
+  }
+  
+  #btn:active {
+    background-color: #ca7214; 
+    border-color: #ca7214;
+  }
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+}

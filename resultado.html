@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT M10 - Resultados</title>
+    <link rel="shortcut icon" href="img/brasao.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container-fluid d-flex align-items-center justify-content-center min-vh-100"> 
+        <div class="container col-md-8 col-lg-6 mx-auto">
+            <img src="img/brasao.png" alt="Logo" class="container__logo"> 
+            <h1>Sorteador<br><span style="color: #FF9625;">Torneio Interno</span></h1>
+            <h3 class="text-white text-center">Categoria: <span id="categoria-resultado" style="color: #FF9625;"></span></h3> 
+            <h4 class="text-white text-center">Duplas Sorteadas:</h4> 
+            <div class="d-flex">
+                <ul id="lista-duplas" class="ml-4"></ul> 
+            </div> <div id="resultado"> </div>
+            
+            <button type="submit" id="btn-reiniciar" class="btn btn-primary btn-block">Reiniciar</button>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>
