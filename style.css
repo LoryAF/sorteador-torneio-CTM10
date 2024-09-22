@@ -151,14 +151,15 @@ h4 span:last-child { /* Seleciona o último span dentro do h1 */
 
 .switch-label input:checked + .switch-slider {
     background-color: #ff8b0f; /* Cor do switch ativado */
+    
 }
 
 .switch-label input:checked + .switch-slider::before {
-    transform: translateX(25px); /* Move a bolinha para a direita */
+    transform: translateX(22px); /* Move a bolinha para a direita */
 }
   
 
-@media (min-width: 768px) {
+@media (min-width: 844px) {
   h1 {
     font-size: 3rem;
   }
