@@ -24,11 +24,22 @@
                 </div>
                 <div class="form-group">
                     <label for="quantidade-duplas">Quantidade de duplas:</label>
-                    <input type="number" class="form-control" id="quantidade-duplas" min="1" placeholder="Ex: 12" required>
+                    <input type="number" class="form-control" id="quantidade-duplas" min="1" placeholder="Ex: 18" required>
                 </div>
                 <div class="form-group">
                     <label for="quantidade-bionicos">Quantidade Biônicos:</label>
                     <input type="number" class="form-control" id="quantidade-bionicos" min="0" placeholder="Ex: 2" required>
+                </div>
+                <div class="form-group switch-container">
+                    <span>Deseja adicionar os nomes das duplas?</span>
+                    <label for="adicionar-nomes" class="switch-label">
+                        <input type="checkbox" id="adicionar-nomes"> 
+                        <span class="switch-slider"></span>
+                    </label>  
+                </div>
+                <div class="form-group" id="container-nomes" style="display: none;"> 
+                    <label for="nomes-duplas">Nomes das duplas (um por linha):</label>
+                    <textarea class="form-control" id="nomes-duplas" rows="5" placeholder="Ex: &#10;Nome 1 e Nome 2 &#10;Nome 3 e Nome 4"></textarea>
                 </div>
                 <button type="submit" id="btn" class="btn btn-primary btn-block">Sortear</button>
             </form>
